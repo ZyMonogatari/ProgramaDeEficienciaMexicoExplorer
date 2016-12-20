@@ -1,5 +1,5 @@
 {
-  "name": "eficiencia",
+  "name": "programa-eficiencia-mexico-e",
   "version": "1.1.1",
   "description": "Eficiencia: An Ionic project",
   "dependencies": {
@@ -22,5 +22,24 @@
     "cordova-plugin-splashscreen",
     "ionic-plugin-keyboard"
   ],
-  "cordovaPlatforms": []
+  "cordovaPlatforms": [],
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZyMonogatari/ProgramaDeEficienciaMexicoExplorer.git"
+  },
+  "keywords": [
+    "eficiencia",
+    "mexico",
+    "e"
+  ],
+  "author": "ZyMonogatari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZyMonogatari/ProgramaDeEficienciaMexicoExplorer/issues"
+  },
+  "homepage": "https://github.com/ZyMonogatari/ProgramaDeEficienciaMexicoExplorer#readme"
 }
