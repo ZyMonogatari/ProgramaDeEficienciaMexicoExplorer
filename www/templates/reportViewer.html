@@ -1,0 +1,18 @@
+<div class="list">
+  <div class=" item row header">
+    <div class="col">Sales number</div>
+    <div class="col">Sales amount</div>
+    <div class="col">Collection</div>
+    <div class="col">Big total sales</div>
+    <div class="col" ng-if="person.type==1">Answered calls number</div>
+    <div class="col" ng-if="person.type==1">Efficiency</div>
+  </div>
+  <div class="item row header">
+    <div class="col">{{totalNumberSales}}</div>
+    <div class="col">{{totalAmount}}</div>
+    <div class="col">{{totalCollect}}</div>
+    <div class="col">{{totalBigTotalSales}}</div>
+    <div class="col" ng-if="person.type==1">{{totalAnsweredCalls}} </div>
+    <div class="col" ng-if="person.type==1">{{totalEfficiency}}</div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="list">
+
+	<label class="item item-input item-select">
+		<div class="input-label">
+			Select a year
+		</div>
+		<select ng-model = "date.year" ng-change="setDays()" required="">
+			<option ng-repeat="year in years">{{year}}</option>
+		</select>
+	</label>
+
+	<label class="item item-input item-select" ng-if="monthDiv" >
+		<div class="input-label">
+			Select a Month
+		</div>
+		<select ng-model="date.month" ng-change="setDays()" required="">
+			<option ng-repeat="month in months">{{month}}</option>
+		</select>
+ 	</label>
+	
+	<label class="item item-input item-select" ng-if="weekDiv">
+		<div class="input-label">
+			Select initail week day
+		</div>
+		<select ng-model="date.initialDay" ng-change="dateDifference()" required="">
+			<option ng-repeat="day in days">{{day}}</option>
+		</select>
+ 	</label>
+
+ 	<label class="item item-input" ng-if="weekDiv">
+	    <span class="input-label">Last week day</span>
+	    <input type="text" ng-model="date.lastDay" style="position: absolute; top: 5%; right: 0%; width: 10%;" disabled="">
+  	</label>
+
+	<label class="item item-input item-select" ng-if="dayDiv">
+		<div class="input-label">
+			Select a Day
+		</div>
+		<select ng-model="date.day">
+			<option ng-repeat="day in days">{{day}}</option>
+		</select>
+ 	</label>
+
+</div>
+<button class="button button-full button-positive" ng-click="save()" >
+	Search
+</button>
+	
+

@@ -1,0 +1,32 @@
+<div class="list">
+
+  <div class="item item-divider">
+    {{person.name}}
+  </div>
+
+  <a class="item" ng-click="go('app.dailyReport')">
+    create or edit daily report 
+  </a>
+
+  <a class="item" ng-click="go('app.datePicker', 'day')">
+	See report of a day in specific
+  </a>
+
+  <a class="item" ng-click="go('app.datePicker', 'week')">
+    See weekly report
+  </a>
+
+  <a class="item" ng-click="go('app.datePicker', 'month')">
+    See monthly report
+  </a>
+
+  <a class="item" ng-click="go('app.datePicker', 'year')">
+    See yearly report
+  </a>
+</div>
+ <button class="button button-block button-assertive" ng-click="delete()">
+  	Delete this person
+  	<i class="icon ion-trash-b"></i>
+  </button>
+ <br>
+ <br>

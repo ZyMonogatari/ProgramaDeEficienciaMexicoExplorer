@@ -1,0 +1,54 @@
+<div class="list">
+  <label class="item item-input">
+    <span class="input-label">Name</span>
+    <input type="text" value={{person.name}} disabled="">
+  </label>
+  <label class="item item-input">
+    <span class="input-label">Sales number</span>
+    <input type="number" ng-model = "numberOfSales" required>
+  </label>
+  <label class="item item-input">
+    <span class="input-label">Sales amount</span>
+    <input type="number" ng-model = "amount" ng-change = "bigTotalSalesSum()" required>
+  </label>
+  <label class="item item-input">
+    <span class="input-label">Collection</span>
+    <input type="number" ng-model = "collect" ng-change = "bigTotalSalesSum()" required>
+  </label>
+  <label class="item item-input" ng-if="person.type==1">
+    <span class="input-label">Answered calls number</span>
+    <input type="number" ng-model = "data.answeredCalls" ng-change="efficiencyDiv()" required> 
+  </label>
+</div>
+
+<div class="list">
+  <div class=" item row header">
+    <div class="col">Sales number</div>
+    <div class="col">Sales amount</div>
+    <div class="col">Collection</div>
+    <div class="col">Big total sales</div>
+    <div class="col" ng-if="person.type==1" >Answered calls number</div>
+    <div class="col" ng-if="person.type==1">Efficiency</div>
+  </div>
+  <div class="item row header">
+    <div class="col">{{numberOfSales}}</div>
+    <div class="col">{{amount}}</div>
+    <div class="col">{{collect}}</div>
+    <div class="col">{{bigTotalSales}}</div>
+    <div class="col" ng-if="person.type==1">{{data.answeredCalls}} </div>
+    <div class="col" ng-if="person.type==1">{{efficiency}}</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col col-33"></div>
+  <div class="col col-33">
+    <button class="button button-full button-positive" ng-if="type == 0" ng-click="save()" >
+      Save
+    </button>
+    <button class="button button-full button-positive" ng-if="type == 1" ng-click="update()" >
+      Update
+    </button>
+  </div>
+  <div class="col col-33"></div>
+</div>

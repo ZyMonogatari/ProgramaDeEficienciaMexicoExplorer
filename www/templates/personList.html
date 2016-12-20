@@ -1,0 +1,17 @@
+<ul class="list">
+	<li class = "item" ng-click="go('app.addAgent')">
+		<i class = "icon ion-person-add"></i>
+		Add new person
+	</li>
+    <a class="item item-icon-left" ng-repeat="person in persons" ng-click="savePerson(person)">
+    	<i class="icon ion-person"></i>
+    	<h2>
+    		{{person.name}}
+    	</h2>
+    	<p>
+    		{{person._id}}
+    	</p>
+    </a>	
+</ul>
+<br>
+<br>
