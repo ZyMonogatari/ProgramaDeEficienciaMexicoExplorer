@@ -1,6 +1,6 @@
 angular.module('starter')
 .factory('$efficiencyApi', function($http){
-    var baseUrl = 'https://mexico-e-efficency-api.herokuapp.com/';
+    var baseUrl = 'https://mexico-e-efficency-api.herokuapp.com';
 
     var post = function(url, body){
       body = body || {};
