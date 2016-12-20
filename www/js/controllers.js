@@ -52,10 +52,10 @@ angular.module('starter').controller('addAgentCtrl',
     $scope.savePerson = function(){
       var person = {}
       person.name= $scope.name
-      if($scope.type='Closer'){
+      if($scope.type=='Closer'){
         person.type = 0;
       }
-      if($scope.type='Sales Agent'){
+      if($scope.type=='Sales Agent'){
         person.type = 1;
       }
       $efficiencyApi.addAgent(person).then(function(){
