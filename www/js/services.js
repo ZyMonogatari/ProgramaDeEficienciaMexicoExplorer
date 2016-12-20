@@ -1,6 +1,6 @@
 angular.module('starter')
 .factory('$efficiencyApi', function($http){
-    var baseUrl = 'https://infinite-cliffs-47070.herokuapp.com/';
+    var baseUrl = 'https://mexico-e-efficency-api.herokuapp.com/';
 
     var post = function(url, body){
       body = body || {};
